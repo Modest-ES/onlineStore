@@ -1,5 +1,26 @@
 // @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes shining {
+	0% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,38 +29,72 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: linear-gradient(45deg, rgb(20, 20, 20), rgb(45, 45, 45));
   color: rgb(235, 235, 235);
   h1, h2, h3 {
     font-family: 'Montserrat';
-    color: rgb(50, 215, 255);
+    color: rgb(254, 211, 22);
   }
+
+
+  background: linear-gradient(45deg, rgb(254, 211, 22), rgb(20, 20, 20), rgb(25, 25, 25), rgb(20, 20, 20), rgb(254, 211, 22));
+  background-attachment: fixed;
+	background-size: 400% 400%;
+	animation: gradient 35s ease infinite;
+	height: 100vh;
 }
 
 .wrapper {
   background: linear-gradient(45deg, rgb(30, 30, 30), rgb(55, 55, 55));
-  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   max-width: 1080px;
   margin: 50px auto;
   padding: 20px;
 }
 
+.arrow_icon {
+  font-size: 3rem;
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+
+  a {
+    transition: 0.5s;
+  }
+
+  a:link {
+    color: rgba(254, 211, 22, 0.4);
+  }
+
+  a:visited {
+    color: rgba(254, 211, 22, 0.4);
+  }
+
+  a:hover {
+    color: rgba(254, 211, 22, 0.5);
+  }
+
+  a:active {
+    color: rgba(254, 211, 22, 0.75);
+  }
+}
+
 header {
-  // display: flex;
-  // justify-content: space-between;
+  margin-bottom: 15px;
 
-  // .headerLeft {
-  //   display: flex;
-  //   align-items: center;
-
-    // img {
-    //   margin: 10px;
-    // }
-
-    h3,
-    p {
+    h3, p {
       margin: 0;
+    }
+
+    .header-left {
+      cursor: pointer;
+      .logo-album {
+        margin-right: 5px;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
     }
 
     .search-block {
@@ -51,6 +106,10 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      transition: 0.5s;
+      &:hover {
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+      }
 
       .search-field {
         background: rgba(0, 0, 0, 0);
@@ -59,32 +118,89 @@ header {
         font-size: 16px;
         font-family: 'Roboto';
         margin-left: 5px;
-        width: 300px
+        width: 300px;
       }
 
       .search-button {
         cursor: pointer;
         margin-right: 5px;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.2);
+        }
       }
     }
 
     .header-right {
       display: flex;
       align-items: center;
+
+      .header-right-btn {
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
     }
-  // }
+}
+
+.main-shell {
+  h1 {
+    margin-top: 0;
+  }
+
+  .navigation-bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .navigation-btn-block {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .navigation-btn {
+      cursor: pointer;
+      background: rgb(70, 70, 70);
+      box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.4);
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-right: 7px;
+      border: 0;
+      border-radius: 25px;
+      color: rgb(254, 211, 22);
+      font-family: 'Roboto';
+      font-size: 16px;
+
+      transition: 0.5s;
+
+      &:hover {
+        background: rgb(90, 90, 90);
+      }
+    }
+  }
 }
 
 .content {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 
   .card {
     border-radius: 10px;
-    background: linear-gradient(45deg, rgb(40, 40, 40), rgb(65, 65, 65));
-    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.03);
+    background: linear-gradient(45deg, rgb(50, 50, 50), rgb(75, 75, 75));
+    box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.25);
     padding: 10px;
     margin-bottom: 25px;
     display: flex;
@@ -94,22 +210,31 @@ header {
     transition: 0.5s;
 
     &:hover {
-      transform:translate(1px, -3px);
-      box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.15);
+      transform: scale(1.02);
+      background: linear-gradient(45deg, rgb(62, 62, 62) 0%, rgb(62, 62, 62) 47%, rgb(150, 150, 150) 50%, rgb(62, 62, 62) 53%, rgb(62, 62, 62) 100%);
+      background-size: 500% 500%;
+      animation: shining 2s ease infinite;
     }
 
     b {
-      color: rgb(50, 215, 255);
+      color: rgb(254, 211, 22);
+      //color: white;
     }
 
     h3 {
       margin-top: 10px;
       margin-bottom: 10px;
+      color: white;
     }
 
     .album-image {
       width: 100%;
       border-radius: 10px;
+      cursor: pointer;
+      transition: 0.5s;
+      &:hover {
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.25);
+      }
     }
 
     .card-bottom {
@@ -120,19 +245,44 @@ header {
     }
 
     button {
-      background: linear-gradient(45deg, rgb(30, 30, 30), rgb(55, 55, 55));
-      border: 1px solid rgb(50, 215, 255);
-      border-radius: 15px;
+      background: rgba(30, 30, 30, 0.5);
+      border: 0;
+      border-radius: 20px;
       padding: 10px;
+      padding-bottom: 6px;
       font-family: 'Roboto';
       font-size: 16px;
       color: white;
       cursor: pointer;
 
-      .button-shell {
-        display: flex;
-        align-items: center;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+        background: rgba(30, 30, 30, 1);
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
       }
+    }
+  }
+  
+  .btn-more {
+    cursor: pointer;
+    border-radius: 25px;
+    background: linear-gradient(45deg, rgb(50, 50, 50), rgb(65, 65, 65));
+    border: 0;
+    padding: 15px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+    h3 {
+      margin: 0;
+    }
+
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, rgb(50, 50, 50) 0%, rgb(62, 62, 62) 47%, rgb(150, 150, 150) 50%, rgb(62, 62, 62) 53%, rgb(50, 50, 50) 100%);
+      background-size: 500% 500%;
+      animation: shining 2s ease infinite;
     }
   }
 }
