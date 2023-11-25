@@ -4,8 +4,8 @@ export default function App() {
       <header className="d-flex justify-between align-center">
        <div className="d-flex align-center header-left">
         <img width={40} height={40} src="./misc/logoalbum.png" alt="Logo" className="logo-album"/>
-          <div>
-            <h3>ALBUM STORE</h3>
+          <div className="logo-text"> 
+            <h3 className="yellow-text">ALBUM STORE</h3>
             <p>Музыкальные альбомы на заказ</p>
           </div>
        </div>
@@ -66,10 +66,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -87,10 +87,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -108,10 +108,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -129,10 +129,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -150,10 +150,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -171,10 +171,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -192,10 +192,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -213,10 +213,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -234,10 +234,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -264,10 +264,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -285,10 +285,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -306,10 +306,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -327,10 +327,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -348,10 +348,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -369,10 +369,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -390,10 +390,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -411,10 +411,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -432,10 +432,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -453,10 +453,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -474,10 +474,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -495,10 +495,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -516,10 +516,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -537,10 +537,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -558,10 +558,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -588,10 +588,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -609,10 +609,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -630,10 +630,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -651,10 +651,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -672,10 +672,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -693,10 +693,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -714,10 +714,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -735,10 +735,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -756,10 +756,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -777,10 +777,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -798,10 +798,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -819,10 +819,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -840,10 +840,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -861,10 +861,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -882,10 +882,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -912,10 +912,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -933,10 +933,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -954,10 +954,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -975,10 +975,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -996,10 +996,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1017,10 +1017,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1038,10 +1038,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1059,10 +1059,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1080,10 +1080,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1101,10 +1101,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1122,10 +1122,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1143,10 +1143,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1164,10 +1164,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1185,10 +1185,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1206,10 +1206,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1236,10 +1236,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1257,10 +1257,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1278,10 +1278,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1299,10 +1299,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1320,10 +1320,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1341,10 +1341,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1362,10 +1362,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1383,10 +1383,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1404,10 +1404,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1425,10 +1425,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1446,10 +1446,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1467,10 +1467,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1488,10 +1488,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1509,10 +1509,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1530,10 +1530,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1560,10 +1560,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1581,10 +1581,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1602,10 +1602,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1623,10 +1623,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1644,10 +1644,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1665,10 +1665,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1686,10 +1686,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1707,10 +1707,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1728,10 +1728,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1749,10 +1749,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1770,10 +1770,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1791,10 +1791,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1812,10 +1812,10 @@ export default function App() {
                 </div>
                 <div>
                   <button>
-                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                    <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5">
-                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                    <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                   </button>
                 </div>
             </div>
@@ -1833,10 +1833,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
@@ -1854,10 +1854,10 @@ export default function App() {
               </div>
               <div>
                 <button>
-                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Add To Favorites" title="Add To Favorites" />
+                  <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                 </button>
                 <button className="ml-5">
-                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Add To Cart" title="Add To Cart" />
+                  <img width={16} height={16} src="./misc/btn-plus.png" alt="Добавить в корзину" title="Добавить в корзину" />
                 </button>
               </div>
             </div>
