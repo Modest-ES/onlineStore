@@ -10,7 +10,7 @@ export default function Card({albumCover, albumName, albumPrice, onClickFavorite
                   <span>Цена: </span>
                   <b>${albumPrice}</b>
                 </div>
-                <div>
+                <div className="d-flex">
                   <button onClick={onClickFavorite}>
                     <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>

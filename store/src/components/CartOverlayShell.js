@@ -37,7 +37,7 @@ export default function CartOverlayShell({onClickBtnBack, items}) {
               <b>Сумма</b>
             </div>
             <div className="cart-total">
-              <b>Комиссия (5%):</b>
+              <b>НДС (13%):</b>
               <div className="dashline"></div>
               <b>Сумма</b>
             </div>

@@ -373,7 +373,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-
+  //justify-content: flex-start;
   .card {
     border-radius: 10px;
     background: linear-gradient(45deg, rgb(50, 50, 50), rgb(75, 75, 75));
@@ -430,7 +430,7 @@ header {
       padding-bottom: 6px;
       cursor: pointer;
 
-      transition: 0.3s;
+      transition: 0.1s;
 
       &:hover {
         transform: scale(1.1);

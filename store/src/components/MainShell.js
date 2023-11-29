@@ -926,7 +926,7 @@ export default function MainShell({mainShellData}) {
                     onClickFavorite={() => console.log("AddedToFavorite")}
                     onClickPlus={() => mainShellData(item)} />
                 ))}
-                <BtnMore />
+                {/* <BtnMore /> */}
             </div>
 
             <h1 id="hip-hop-records">Хип-Хоп альбомы</h1>
@@ -939,7 +939,7 @@ export default function MainShell({mainShellData}) {
                     onClickFavorite={() => console.log("AddedToFavorite")}
                     onClickPlus={() => mainShellData(item)} />
                 ))}
-                <BtnMore />
+                {/* <BtnMore /> */}
             </div>
 
             <h1 id="rnb-records">RnB альбомы</h1>
@@ -952,7 +952,7 @@ export default function MainShell({mainShellData}) {
                     onClickFavorite={() => console.log("AddedToFavorite")}
                     onClickPlus={() => mainShellData(item)} />
                 ))}
-                <BtnMore />
+                {/* <BtnMore /> */}
             </div>
 
             <h1 id="pop-records">Поп альбомы</h1>
@@ -965,7 +965,7 @@ export default function MainShell({mainShellData}) {
                     onClickFavorite={() => console.log("AddedToFavorite")}
                     onClickPlus={() => mainShellData(item)} />
                 ))}
-                <BtnMore />
+                {/* <BtnMore /> */}
             </div>
 
             <h1 id="soul-records">Соул альбомы</h1>
@@ -978,7 +978,7 @@ export default function MainShell({mainShellData}) {
                     onClickFavorite={() => console.log("AddedToFavorite")}
                     onClickPlus={() => mainShellData(item)} />
                 ))}
-                <BtnMore />
+                {/* <BtnMore /> */}
             </div>
 
             <h1 id="instrumental-records">Инструментальные альбомы</h1>
@@ -991,7 +991,7 @@ export default function MainShell({mainShellData}) {
                     onClickFavorite={() => console.log("AddedToFavorite")}
                     onClickPlus={() => mainShellData(item)} />
                 ))}
-                <BtnMore />
+                {/* <BtnMore /> */}
             </div>
 
         </div>
