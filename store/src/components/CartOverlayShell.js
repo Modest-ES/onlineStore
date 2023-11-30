@@ -6,10 +6,15 @@ export default function CartOverlayShell({onClickBtnBack, items}) {
           </div>
         <div className="cart-overlay">
             <div className="cart-title">
-              <button className="btn-back" onClick={onClickBtnBack}>
-                <img width={32} height={32} src="./misc/btn-back.png" alt="Вернуться" title="Вернуться" />
+              <div className="d-flex align-center">
+                <button className="btn-back" onClick={onClickBtnBack}>
+                  <img width={32} height={32} src="./misc/btn-back.png" alt="Вернуться" title="Вернуться" />
+                </button>
+                <h3>Корзина</h3>
+              </div>
+              <button className="btn-clear-cart">
+                <h4>Очистить</h4>
               </button>
-              <h3>Корзина</h3>
             </div>
             <div className="cart-content">
               {
