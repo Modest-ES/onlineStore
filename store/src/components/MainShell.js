@@ -880,10 +880,10 @@ import BtnMore from './BtnMore.js';
 //     }
 // ];
 
-export default function MainShell({addToCartFunction, addToFavoriteFunction, headerData}) {
+export default function MainShell({addToCartFunction, addToFavoriteFunction, headerData, favoriteOpenStatus, favoriteItemsList, onBtnClearFavorites}) {
     const [items, setItems] = React.useState([]);
     const [contentIsLoading, setContentIsLoading] = React.useState(true);
-
+    
     React.useEffect(() => {
         setTimeout(() => {
             axios.get('https://6564f1c3ceac41c0761f0d10.mockapi.io/items').then((response) => {
@@ -899,6 +899,18 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
                 <NavigationBar />
 
                 <h1>Загрузка</h1>
+                <div className='content'>
+                    <Card isLoading={true} />
+                    <Card isLoading={true} />
+                    <Card isLoading={true} />
+                    <Card isLoading={true} />
+                    <Card isLoading={true} />
+                    <Card isLoading={true} />
+                    <Card isLoading={true} />
+                    <Card isLoading={true} />
+                    <Card isLoading={true} />
+                    <Card isLoading={true} />
+                </div>
             </div>
         );
     }
@@ -913,7 +925,50 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
 
     return(
         <div className="main-shell">
-            <NavigationBar />
+            {favoriteOpenStatus && !(headerData) && 
+            <div className='d-flex align-center justify-between'>
+                <h1>Избранное</h1>
+                {favoriteItemsList.length > 0 && <button className='btn-more' onClick={onBtnClearFavorites}><h3>Очистить</h3></button>}
+            </div>
+            }
+            {!(headerData) && favoriteOpenStatus && favoriteItemsList.length < 1 && 
+            <h4>
+                В избранное не добавлено ни одного альбома
+            </h4>
+            }
+            {favoriteOpenStatus && headerData && favoriteItemsList.length > 0 && <h1>Поиск в избранном по запросу: "{headerData}"</h1>}
+            {headerData && favoriteOpenStatus && 
+            <div className='content'>
+            {
+                favoriteItemsList.filter((item) => item.albumName.toLowerCase().includes(headerData.toLowerCase())).map((item) => (
+                    <Card 
+                    key={item.albumName}
+                    albumCover={item.albumCover} 
+                    albumName={item.albumName} 
+                    albumPrice={item.albumPrice}  
+                    onClickFavorite={() => addToFavoriteFunction(item)}
+                    onClickPlus={() => addToCartFunction(item)}
+                    favoriteStatus={favoriteItemsList.filter((obj) => obj.albumName.toLowerCase().includes(item.albumName.toLowerCase())).length > 0 ? true : false } />
+                ))
+            }
+        </div>}
+            {!(headerData) && favoriteOpenStatus && 
+                <div className='content'>
+                    {
+                        favoriteItemsList.map((item) => (
+                            <Card 
+                            key={item.albumName}
+                            albumCover={item.albumCover} 
+                            albumName={item.albumName} 
+                            albumPrice={item.albumPrice}  
+                            onClickFavorite={() => addToFavoriteFunction(item)}
+                            onClickPlus={() => addToCartFunction(item)}
+                            favoriteStatus={favoriteItemsList.filter((obj) => obj.albumName.toLowerCase().includes(item.albumName.toLowerCase())).length > 0 ? true : false } />
+                        ))
+                    }
+                </div>}
+
+            {!(headerData) && !favoriteOpenStatus && <NavigationBar />}
 
             {headerData ? <h1>Поиск по запросу: "{headerData}"</h1> : <div></div>}
             {headerData && 
@@ -927,13 +982,14 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
                                 albumName={item.albumName} 
                                 albumPrice={item.albumPrice}  
                                 onClickFavorite={() => addToFavoriteFunction(item)}
-                                onClickPlus={() => addToCartFunction(item)} />
+                                onClickPlus={() => addToCartFunction(item)} 
+                                favoriteStatus={favoriteItemsList.filter((obj) => obj.albumName.toLowerCase().includes(item.albumName.toLowerCase())).length > 0 ? true : false }/>
                             ))
                         ))
                     }
                 </div>
             }
-            {!(headerData) && <div>
+            {!(headerData) && !favoriteOpenStatus && <div>
                 <h1 id="best-sellers">Популярные альбомы</h1>
                 <div className="content">
                     {items[0].map( (item) => (
@@ -943,10 +999,11 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
                         albumName={item.albumName} 
                         albumPrice={item.albumPrice}  
                         onClickFavorite={() => addToFavoriteFunction(item)}
-                        onClickPlus={() => addToCartFunction(item)} />
+                        onClickPlus={() => addToCartFunction(item)} 
+                        favoriteStatus={favoriteItemsList.filter((obj) => obj.albumName.toLowerCase().includes(item.albumName.toLowerCase())).length > 0 ? true : false }/>
                     ))}
                     <div className="btn-more-block">
-                        <BtnMore />
+                        {/* <BtnMore /> */}
                     </div>
                 </div>
 
@@ -959,10 +1016,11 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
                         albumName={item.albumName} 
                         albumPrice={item.albumPrice}  
                         onClickFavorite={() => addToFavoriteFunction(item)}
-                        onClickPlus={() => addToCartFunction(item)} />
+                        onClickPlus={() => addToCartFunction(item)} 
+                        favoriteStatus={favoriteItemsList.filter((obj) => obj.albumName.toLowerCase().includes(item.albumName.toLowerCase())).length > 0 ? true : false }/>
                     ))}
                     <div className="btn-more-block">
-                        <BtnMore />
+                        {/* <BtnMore /> */}
                     </div>
                 </div>
 
@@ -975,10 +1033,11 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
                         albumName={item.albumName} 
                         albumPrice={item.albumPrice}  
                         onClickFavorite={() => addToFavoriteFunction(item)}
-                        onClickPlus={() => addToCartFunction(item)} />
+                        onClickPlus={() => addToCartFunction(item)} 
+                        favoriteStatus={favoriteItemsList.filter((obj) => obj.albumName.toLowerCase().includes(item.albumName.toLowerCase())).length > 0 ? true : false }/>
                     ))}
                     <div className="btn-more-block">
-                        <BtnMore />
+                        {/* <BtnMore /> */}
                     </div>
                 </div>
 
@@ -991,10 +1050,11 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
                         albumName={item.albumName} 
                         albumPrice={item.albumPrice}  
                         onClickFavorite={() => addToFavoriteFunction(item)}
-                        onClickPlus={() => addToCartFunction(item)} />
+                        onClickPlus={() => addToCartFunction(item)} 
+                        favoriteStatus={favoriteItemsList.filter((obj) => obj.albumName.toLowerCase().includes(item.albumName.toLowerCase())).length > 0 ? true : false }/>
                     ))}
                     <div className="btn-more-block">
-                        <BtnMore />
+                        {/* <BtnMore /> */}
                     </div>
                 </div>
 
@@ -1007,10 +1067,11 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
                         albumName={item.albumName} 
                         albumPrice={item.albumPrice}  
                         onClickFavorite={() => addToFavoriteFunction(item)}
-                        onClickPlus={() => addToCartFunction(item)} />
+                        onClickPlus={() => addToCartFunction(item)} 
+                        favoriteStatus={favoriteItemsList.filter((obj) => obj.albumName.toLowerCase().includes(item.albumName.toLowerCase())).length > 0 ? true : false }/>
                     ))}
                     <div className="btn-more-block">
-                        <BtnMore />
+                        {/* <BtnMore /> */}
                     </div>
                 </div>
 
@@ -1023,10 +1084,11 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
                         albumName={item.albumName} 
                         albumPrice={item.albumPrice} 
                         onClickFavorite={() => addToFavoriteFunction(item)}
-                        onClickPlus={() => addToCartFunction(item)} />
+                        onClickPlus={() => addToCartFunction(item)} 
+                        favoriteStatus={favoriteItemsList.filter((obj) => obj.albumName.toLowerCase().includes(item.albumName.toLowerCase())).length > 0 ? true : false }/>
                     ))}
                     <div className="btn-more-block">
-                        <BtnMore />
+                        {/* <BtnMore /> */}
                     </div>
                 </div>
             </div>}

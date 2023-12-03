@@ -6,6 +6,7 @@ import MainShell from './components/MainShell.js';
 
 export default function App() {
   const [cartIsOpened, setCartIsOpened] = React.useState(false);
+  const [favoriteIsOpened, setFavoriteIsOpened] = React.useState(false);
   const [cartItems, setCartItems] = React.useState([]);
   const [favoriteItems, setFavoriteItems] = React.useState([]);
   const [searchFieldValue, setSearchFieldValue] = React.useState('');
@@ -14,8 +15,13 @@ export default function App() {
     setCartItems(prev => [...prev, cartItem]);
   }
 
+  const onClickBtnFavorite = () => {
+    setFavoriteIsOpened(!favoriteIsOpened);
+    setSearchFieldValue('');
+  }
+
   const addToFavoriteFunction = (favoriteItem) => {
-    setFavoriteItems(prev => [...prev, favoriteItem]);
+    favoriteItems.filter((item) => item.albumName.toLowerCase().includes(favoriteItem.albumName.toLowerCase())).length > 0 ? setFavoriteItems((prev) => prev.filter((item) => item.albumName !== favoriteItem.albumName)) : setFavoriteItems(prev => [...prev, favoriteItem]);
   }
 
   const headerData = (headerDataValue) => {
@@ -29,8 +35,8 @@ export default function App() {
   return (
     <div className="wrapper clear">
       {cartIsOpened && <CartOverlayShell onClickBtnBack={() => setCartIsOpened(false)} items={cartItems} onClickBtnDelete={deleteableItem} onBtnClearCart={() => setCartItems([])} />}
-      <Header headerData={headerData} onClickCart={() => setCartIsOpened(true)} />
-      <MainShell addToCartFunction={addToCartFunction} addToFavoriteFunction={addToFavoriteFunction} headerData={searchFieldValue}/>
+      <Header onClickLogo={() => setFavoriteIsOpened(false)} onClickCart={() => setCartIsOpened(true)} onClickFavorite={() => onClickBtnFavorite()} headerData={headerData}/>
+      <MainShell addToCartFunction={addToCartFunction} addToFavoriteFunction={addToFavoriteFunction} headerData={searchFieldValue} favoriteOpenStatus={favoriteIsOpened} favoriteItemsList={favoriteItems} onBtnClearFavorites={() => setFavoriteItems([])} />
       <ArrowIcon />
     </div>
   );
