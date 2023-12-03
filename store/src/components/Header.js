@@ -1,4 +1,15 @@
-export default function Header(props) {
+import React from 'react';
+
+export default function Header({onClickCart, headerData}) {
+  const [searchValue, setSearchValue] = React.useState('');
+  const onChangeSearchFieldValue = (event) => {
+    setSearchValue(event.target.value);
+    headerData(event.target.value);
+  }
+  const clearSearchValue = () => {
+    setSearchValue('');
+    headerData('');
+  }
     return(
         <header className="d-flex justify-between align-center">
             <div className="d-flex align-center header-left">
@@ -9,14 +20,15 @@ export default function Header(props) {
               </div>
             </div>
             <div className="search-block">
-              <input placeholder="Поиск..." className="search-field">
+              <input onChange={onChangeSearchFieldValue} value={searchValue} placeholder="Поиск..." className="search-field">
               </input>
-              <img src="./misc/Search.svg" alt="Поиск" title="Найти" className="search-button" />
+              {searchValue && <img width={18} height={18} src="./misc/btn-delete.png" alt="Очистить поиск" title="Очистить поиск" className="search-button" onClick={() => clearSearchValue()} />}
+              {!(searchValue) && <img width={18} height={18} src="./misc/Search.svg" alt="Поиск" title="Введите запрос в поисковую строку" className="search-button" />}
             </div>
             <div className="header-right">
               <img src="./misc/favorites.png" alt="Избранное" title="Избранное" className="header-right-btn"/>
-              <img src="./misc/cart1.svg" alt="Корзина" title="Корзина" className="ml-5 header-right-btn" onClick={props.onClickCart} />
-              <span className="ml-10 mr-10 cu-p" onClick={props.onClickCart}>Баланс</span>
+              <img src="./misc/cart1.svg" alt="Корзина" title="Корзина" className="ml-5 header-right-btn" onClick={onClickCart} />
+              <span className="ml-10 mr-10 cu-p" onClick={onClickCart}>Баланс</span>
               <img src="./misc/user1.svg" alt="Профиль" title="Профиль" className="header-right-btn" />
             </div>
         </header>

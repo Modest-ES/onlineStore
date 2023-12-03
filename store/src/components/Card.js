@@ -1,5 +1,8 @@
+//import React from 'react';
+
 export default function Card({albumCover, albumName, albumPrice, onClickFavorite, onClickPlus}) {
-    return(
+
+  return(
         <div className="card">
             <div className="card-top">
                 <img src={albumCover} alt="Обложка альбома" className="album-image" />
@@ -12,6 +15,7 @@ export default function Card({albumCover, albumName, albumPrice, onClickFavorite
                 </div>
                 <div className="d-flex">
                   <button onClick={onClickFavorite}>
+                    {/* <img width={16} height={16} src={isFavorite ? "./misc/btn-heart-filled.png" : "./misc/btn-heart-empty.png"} alt="Добавить в избранное" title="Добавить в избранное" /> */}
                     <img width={16} height={16} src="./misc/btn-heart-empty.png" alt="Добавить в избранное" title="Добавить в избранное" />
                   </button>
                   <button className="ml-5" onClick={onClickPlus}>

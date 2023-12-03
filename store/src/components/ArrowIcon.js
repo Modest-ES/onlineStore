@@ -1,9 +1,7 @@
 export default function ArrowIcon() {
     return(
-        <div class="arrow_icon">
-            <a href="#top"><i class="fas fa-chevron-circle-up"></i></a>
-
-            
+        <div className="arrow_icon">
+            <a href="#top"><i className="fas fa-chevron-circle-up"></i></a>
         </div>
     );
 }

@@ -123,7 +123,7 @@ body {
   .btn-clear-cart {
     cursor: pointer;
     background: linear-gradient(45deg, rgb(50, 50, 50), rgb(65, 65, 65));
-    padding: 10px;
+    padding: 8px;
     transition: 0.5s;
     border: 0;
     border-radius: 15px;
@@ -138,6 +138,42 @@ body {
       background: linear-gradient(45deg, rgb(70, 70, 70) 0%, rgb(70, 70, 70) 47%, rgb(150, 150, 150) 50%, rgb(70, 70, 70) 53%, rgb(70, 70, 70) 100%);
       background-size: 500% 500%;
       animation: shining 2s ease infinite;
+    }
+  }
+
+  .empty-cart-message {
+    background: linear-gradient(45deg, rgb(40, 40, 40), rgb(65, 65, 65));
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50%;
+    padding: 15px;
+    h1 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .centered-block {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 5px;
+    }
+
+    b {
+      width: 80%;
+      text-align: center;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      border-radius: 15px;
+      border: 0;
+      padding: 7px;
+      background: rgb(75, 75, 75);
     }
   }
 
@@ -319,8 +355,9 @@ header {
 
       .search-button {
         cursor: pointer;
-        margin-right: 5px;
         transition: 0.5s;
+        margin-right: 2px;
+        margin-left: 3px;
         &:hover {
           transform: scale(1.2);
         }
@@ -334,10 +371,10 @@ header {
       .header-right-btn {
         width: 20px;
         height: 20px;
-        transition: 0.5s;
+        transition: 0.2s;
         cursor: pointer;
         &:hover {
-          transform: scale(1.2);
+          transform: scale(1.15);
         }
       }
     }
@@ -394,18 +431,20 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  //justify-content: flex-start;
+  //justify-content: space-around;
+  justify-content: flex-start;
   .card {
     border-radius: 10px;
     background: linear-gradient(45deg, rgb(50, 50, 50), rgb(75, 75, 75));
     box-shadow: 0px 0px 3px rgba(255, 255, 255, 0.25);
     padding: 10px;
     margin-bottom: 25px;
+    margin-right: 1%;
+    margin-left: 1%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 28%;
+    width: 18%;
     transition: 0.5s;
 
     &:hover {
@@ -423,6 +462,7 @@ header {
     h3 {
       margin-top: 10px;
       margin-bottom: 10px;
+      font-size: 15px;
       color: white;
       cursor: pointer;
     }
@@ -466,6 +506,12 @@ header {
         box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.25);
       }
     }
+  }
+
+  .btn-more-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
   
   .btn-more {

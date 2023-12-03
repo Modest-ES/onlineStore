@@ -880,14 +880,13 @@ import BtnMore from './BtnMore.js';
 //     }
 // ];
 
-export default function MainShell({mainShellData}) {
+export default function MainShell({addToCartFunction, addToFavoriteFunction, headerData}) {
     const [items, setItems] = React.useState([]);
     const [contentIsLoading, setContentIsLoading] = React.useState(true);
 
     React.useEffect(() => {
         setTimeout(() => {
             axios.get('https://6564f1c3ceac41c0761f0d10.mockapi.io/items').then((response) => {
-                console.log(response.data);
                 setItems(response.data);
                 setContentIsLoading(false);
             });
@@ -916,83 +915,122 @@ export default function MainShell({mainShellData}) {
         <div className="main-shell">
             <NavigationBar />
 
-            <h1 id="best-sellers">Популярные альбомы</h1>
-            <div className="content">
-                {items[0].map( (item) => (
-                    <Card 
-                    albumCover={item.albumCover} 
-                    albumName={item.albumName} 
-                    albumPrice={item.albumPrice}  
-                    onClickFavorite={() => console.log("AddedToFavorite")}
-                    onClickPlus={() => mainShellData(item)} />
-                ))}
-                <BtnMore />
-            </div>
+            {headerData ? <h1>Поиск по запросу: "{headerData}"</h1> : <div></div>}
+            {headerData && 
+                <div className="content">
+                    {
+                        items.map((category) => (
+                            category.filter((item) => item.albumName.toLowerCase().includes(headerData.toLowerCase())).map((item) => (
+                                <Card 
+                                key = {item.albumName}
+                                albumCover={item.albumCover} 
+                                albumName={item.albumName} 
+                                albumPrice={item.albumPrice}  
+                                onClickFavorite={() => addToFavoriteFunction(item)}
+                                onClickPlus={() => addToCartFunction(item)} />
+                            ))
+                        ))
+                    }
+                </div>
+            }
+            {!(headerData) && <div>
+                <h1 id="best-sellers">Популярные альбомы</h1>
+                <div className="content">
+                    {items[0].map( (item) => (
+                        <Card 
+                        key = {item.albumName}
+                        albumCover={item.albumCover} 
+                        albumName={item.albumName} 
+                        albumPrice={item.albumPrice}  
+                        onClickFavorite={() => addToFavoriteFunction(item)}
+                        onClickPlus={() => addToCartFunction(item)} />
+                    ))}
+                    <div className="btn-more-block">
+                        <BtnMore />
+                    </div>
+                </div>
 
-            <h1 id="hip-hop-records">Хип-Хоп альбомы</h1>
-            <div className="content">
-                {items[1].map( (item) => (
-                    <Card 
-                    albumCover={item.albumCover} 
-                    albumName={item.albumName} 
-                    albumPrice={item.albumPrice}  
-                    onClickFavorite={() => console.log("AddedToFavorite")}
-                    onClickPlus={() => mainShellData(item)} />
-                ))}
-                <BtnMore />
-            </div>
+                <h1 id="hip-hop-records">Хип-Хоп альбомы</h1>
+                <div className="content">
+                    {items[1].map( (item) => (
+                        <Card 
+                        key = {item.albumName}
+                        albumCover={item.albumCover} 
+                        albumName={item.albumName} 
+                        albumPrice={item.albumPrice}  
+                        onClickFavorite={() => addToFavoriteFunction(item)}
+                        onClickPlus={() => addToCartFunction(item)} />
+                    ))}
+                    <div className="btn-more-block">
+                        <BtnMore />
+                    </div>
+                </div>
 
-            <h1 id="rnb-records">RnB альбомы</h1>
-            <div className="content">
-                {items[2].map( (item) => (
-                    <Card 
-                    albumCover={item.albumCover} 
-                    albumName={item.albumName} 
-                    albumPrice={item.albumPrice}  
-                    onClickFavorite={() => console.log("AddedToFavorite")}
-                    onClickPlus={() => mainShellData(item)} />
-                ))}
-                <BtnMore />
-            </div>
+                <h1 id="rnb-records">RnB альбомы</h1>
+                <div className="content">
+                    {items[2].map( (item) => (
+                        <Card 
+                        key = {item.albumName}
+                        albumCover={item.albumCover} 
+                        albumName={item.albumName} 
+                        albumPrice={item.albumPrice}  
+                        onClickFavorite={() => addToFavoriteFunction(item)}
+                        onClickPlus={() => addToCartFunction(item)} />
+                    ))}
+                    <div className="btn-more-block">
+                        <BtnMore />
+                    </div>
+                </div>
 
-            <h1 id="pop-records">Поп альбомы</h1>
-            <div className="content">
-                {items[3].map( (item) => (
-                    <Card 
-                    albumCover={item.albumCover} 
-                    albumName={item.albumName} 
-                    albumPrice={item.albumPrice}  
-                    onClickFavorite={() => console.log("AddedToFavorite")}
-                    onClickPlus={() => mainShellData(item)} />
-                ))}
-                <BtnMore />
-            </div>
+                <h1 id="pop-records">Поп альбомы</h1>
+                <div className="content">
+                    {items[3].map( (item) => (
+                        <Card 
+                        key = {item.albumName}
+                        albumCover={item.albumCover} 
+                        albumName={item.albumName} 
+                        albumPrice={item.albumPrice}  
+                        onClickFavorite={() => addToFavoriteFunction(item)}
+                        onClickPlus={() => addToCartFunction(item)} />
+                    ))}
+                    <div className="btn-more-block">
+                        <BtnMore />
+                    </div>
+                </div>
 
-            <h1 id="soul-records">Соул альбомы</h1>
-            <div className="content">
-                {items[4].map( (item) => (
-                    <Card 
-                    albumCover={item.albumCover} 
-                    albumName={item.albumName} 
-                    albumPrice={item.albumPrice}  
-                    onClickFavorite={() => console.log("AddedToFavorite")}
-                    onClickPlus={() => mainShellData(item)} />
-                ))}
-                <BtnMore />
-            </div>
+                <h1 id="soul-records">Соул альбомы</h1>
+                <div className="content">
+                    {items[4].map( (item) => (
+                        <Card 
+                        key = {item.albumName}
+                        albumCover={item.albumCover} 
+                        albumName={item.albumName} 
+                        albumPrice={item.albumPrice}  
+                        onClickFavorite={() => addToFavoriteFunction(item)}
+                        onClickPlus={() => addToCartFunction(item)} />
+                    ))}
+                    <div className="btn-more-block">
+                        <BtnMore />
+                    </div>
+                </div>
 
-            <h1 id="instrumental-records">Инструментальные альбомы</h1>
-            <div className="content">
-                {items[5].map( (item) => (
-                    <Card 
-                    albumCover={item.albumCover} 
-                    albumName={item.albumName} 
-                    albumPrice={item.albumPrice} 
-                    onClickFavorite={() => console.log("AddedToFavorite")}
-                    onClickPlus={() => mainShellData(item)} />
-                ))}
-                <BtnMore />
-            </div>
+                <h1 id="instrumental-records">Инструментальные альбомы</h1>
+                <div className="content">
+                    {items[5].map( (item) => (
+                        <Card 
+                        key = {item.albumName}
+                        albumCover={item.albumCover} 
+                        albumName={item.albumName} 
+                        albumPrice={item.albumPrice} 
+                        onClickFavorite={() => addToFavoriteFunction(item)}
+                        onClickPlus={() => addToCartFunction(item)} />
+                    ))}
+                    <div className="btn-more-block">
+                        <BtnMore />
+                    </div>
+                </div>
+            </div>}
+            
 
         </div>
     );
