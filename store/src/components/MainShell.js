@@ -3,6 +3,7 @@ import axios from 'axios';
 import NavigationBar from './NavigationBar.js';
 import Card from './Card.js';
 import BtnMore from './BtnMore.js';
+import ItemCategory from "./ItemCategory.js";
 
 export default function MainShell({addToCartFunction, addToFavoriteFunction, headerData, favoriteOpenStatus, favoriteItemsList, onBtnClearFavorites}) {
     const [items, setItems] = React.useState([]);
@@ -19,7 +20,7 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
 
     if (contentIsLoading) {
         return(
-            <div className="main-shell">
+            <div className="main-shell" >
                 <NavigationBar />
 
                 <h1>Загрузка</h1>
@@ -124,6 +125,7 @@ export default function MainShell({addToCartFunction, addToFavoriteFunction, hea
                 {items[0].length > 0 && 
                 <>
                 <h1 id="best-sellers">Популярные альбомы</h1>
+                {/* <ItemCategory itemsList={items[0]} addToCartFunction={addToCartFunction} addToFavoriteFunction={addToFavoriteFunction} favoriteItemsList={favoriteItemsList} /> */}
                 <div className="content">
                     {items[0].map( (item) => (
                         <Card 
